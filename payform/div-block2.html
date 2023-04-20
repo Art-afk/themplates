@@ -1,0 +1,45 @@
+          <!--block2-->
+          <div id="block2" class="payment-info flex justify-space-between" style="display: none;">
+            <div class="column billing">
+                <div class="title">
+                    <div class="num">2</div>
+                    <h4>Billing Info</h4>
+                </div>
+               
+                <div class="field full">
+                    <label for="Email-address">Email address</label>
+                    <input id="Email-address" type="email" placeholder="Email address"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        title="Please enter a valid email address">
+                </div>
+                <div class="flex justify-space-between">
+                    <div class="field full">
+                        <label for="phone">Phone number</label>
+                        <input id="phone" type="tel" placeholder="Phone Number" pattern="\+\d{5,15}"
+                            title="Please enter a valid phone number starting with + and containing 6 to 16 digits">
+                    </div>
+
+                </div>
+            </div>
+            <div class="column shipping">
+                <div class="title">
+                    <div class="num">3</div>
+                    <h4>Payment amount</h4>
+                </div>
+                <div id="currency" class="field full">
+                    <label for="currency">Currency</label>
+                    <select id="currency-select" name="currency">
+                        <option value="USD">USD</option>
+                        <option value="KGS">KGS</option>
+                        <option value="RUB">RUB</option>
+                    </select>
+                </div>
+
+                <div class="field full">
+                    <label for="amount">Amount</label>
+                    <input id="amount-input" type="text" placeholder="0.0 USD" pattern="[0-9]+([\.][0-9]+)?"
+                        title="Please enter a valid amount with numbers and a dot">
+                </div>
+            </div>
+        </div>
+        <!--end block2-->
